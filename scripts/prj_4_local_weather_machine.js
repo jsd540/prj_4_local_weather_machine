@@ -52,16 +52,16 @@ function showPosition(position){
 
     // all data to be displayed
             document.getElementById("location").innerHTML = "Local weather for " + data.name + " today";
-            
-            // document.getElementById("curr_temp").innerHTML = "<small>Current temperature:  </small>" + "<b>" + data.main.temp +"</b>"+ "<b> C </b>";
-            // document.getElementById("hi_temp").innerHTML = "<small>Expected High: </small>" + "<b>" + data.main.temp_max + "</b>" + " <b> C </b>";
-            // document.getElementById("low_temp").innerHTML = "<small>Expected Low: </small>" + "<b>" + data.main.temp_min + " </b>" + "<b>C </b>";
+    
+            document.getElementById("curr_temp").innerHTML = "<small>Current temperature:  </small>" + "<b>" + data.main.temp +"</b>"+ "<b> C </b>";
+            document.getElementById("hi_temp").innerHTML = "<small>Expected High: </small>" + "<b>" + data.main.temp_max + "</b>" + " <b> C </b>";
+            document.getElementById("low_temp").innerHTML = "<small>Expected Low: </small>" + "<b>" + data.main.temp_min + " </b>" + "<b>C </b>";
 
             // Farenheit test
 
-            document.getElementById("curr_temp").innerHTML = "<small>Current temperature:  </small>" + "<b>" + curr_temp_faren +"</b>"+ "<b> F </b>";
-            document.getElementById("hi_temp").innerHTML = "<small>Expected High: </small>" + "<b>" + hi_temp_faren + "</b>" + " <b> F </b>";
-            document.getElementById("low_temp").innerHTML = "<small>Expected Low: </small>" + "<b>" + low_temp_faren + " </b>" + "<b>F </b>";
+            // document.getElementById("curr_temp").innerHTML = "<small>Current temperature: </small>" + "<b>" + curr_temp_faren +"</b>"+ "<b> F </b>";
+            // document.getElementById("hi_temp").innerHTML = "<small>Expected High: </small>" + "<b>" + hi_temp_faren + "</b>" + " <b> F </b>";
+            // document.getElementById("low_temp").innerHTML = "<small>Expected Low: </small>" + "<b>" + low_temp_faren + " </b>" + "<b>F </b>";
 
             document.getElementById("sky").innerHTML = "<small>Expect: </small>" +"<b>" + data.weather[0].main + "</b>";
             document.getElementById("humidity").innerHTML = "<small>Humidity: </small>" + "<b>" + data.main.humidity +"</b>" + "<b>%</b>" ;
