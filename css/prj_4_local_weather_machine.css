@@ -15,7 +15,7 @@ body{
     behavior: url(PIE.htc);
 	width: 500px;
     margin: auto;
-    border: 2px solid #5c8bad;
+    border: 1px solid #5c8bad;
     box-shadow: 3px 3px 7px #888888;
 }
 #local_temp ul{
@@ -31,9 +31,24 @@ img{
     behavior: url(PIE.htc);
 	width: 500px;
     margin: auto;
-    border: 2px solid #5c8bad;
+    border: 1px solid #5c8bad;
     box-shadow: 3px 3px 7px #888888;
     
+}
+.nav-bar{
+	width: 500px;
+	margin: auto;
+
+
+}
+.btn-success{
+	width: 125px;
+	background-color: #bec1b3;
+	float: left;
+	border: 1px solid #5c8bad;
+	box-shadow: 2px 2px 4px #888888;
+
+
 }
 img{
 	float: left;
