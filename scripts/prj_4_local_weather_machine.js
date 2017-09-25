@@ -107,10 +107,10 @@ function load_list2 (data) {
     }
     pic2();
 
-    document.getElementById("sky").innerHTML = "<small>Expect: </small>" +"<b>" + data.weather[0].main + "</b>";
+    document.getElementById("sky").innerHTML = "<small>Expect: </small>" +"<b>" + data.weather[0].description + "</b>";
     document.getElementById("humidity").innerHTML = "<small>Humidity: </small>" + "<b>" + data.main.humidity +"</b>" + "<b>%</b>" ;
     document.getElementById("winds").innerHTML = "<small>Winds at: </small>" + "<b>"+ data.wind.speed +"</b>" + " <b>mph</b>";
-
+    console.log(data);
 }
 
 // need to find an api for the background image that gets user city 
