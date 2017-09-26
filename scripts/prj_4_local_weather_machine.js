@@ -1,21 +1,23 @@
 
 // get user coord's and generate api url req
 
+$(document).ready(function(){
+
 function get_coord(){
-	if(navigator.geolocation){
-	 navigator.geolocation.getCurrentPosition(showPosition);
-	}
-	else {
-		console.log("Geo Not supported");
-	}
+    if(navigator.geolocation){
+     navigator.geolocation.getCurrentPosition(showPosition);
+    }
+    else {
+        console.log("Geo Not supported");
+    }
 }
 
 // getting data from the api and parsing to json
 
 function showPosition(position){
     //get user location
-	var request = "https://fcc-weather-api.glitch.me/api/current?lat=" + position.coords.latitude + "&lon=" + position.coords.longitude;
-	var xmlHttp = new XMLHttpRequest();
+    var request = "https://fcc-weather-api.glitch.me/api/current?lat=" + position.coords.latitude + "&lon=" + position.coords.longitude;
+    var xmlHttp = new XMLHttpRequest();
     var data = "";
     xmlHttp.onreadystatechange = function() { 
         if (xmlHttp.readyState == 4 && xmlHttp.status == 200){
@@ -113,8 +115,8 @@ function load_list2 (data) {
     console.log(data);
 }
 
-// need to find an api for the background image that gets user city 
-// and finds an appropriate image.
+});
+
 
 
 
